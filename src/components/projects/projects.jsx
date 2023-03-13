@@ -1,5 +1,6 @@
 import { Box } from '@mui/material';
-import { PROJECT_LIST } from 'src/mocks/project';
+
+import { PROJECT_LIST } from '@mocks/project';
 
 import ContainerBox from '@common/container-box/container-box';
 import CustomAccordions from '@common/custom-accordion/custom-accordion';
