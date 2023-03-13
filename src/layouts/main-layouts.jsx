@@ -1,4 +1,4 @@
-import { Container } from '@mui/material';
+import { Container, ThemeProvider } from '@mui/material';
 import { useState } from 'react';
 
 import Footer from '@components/footer/footer';
