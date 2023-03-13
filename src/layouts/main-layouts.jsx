@@ -1,4 +1,4 @@
-import { Container, ThemeProvider } from '@mui/material';
+import { Box, Container, ThemeProvider } from '@mui/material';
 import { useState } from 'react';
 
 import Footer from '@components/footer/footer';
@@ -9,12 +9,14 @@ const MainLayouts = ({ children }) => {
     const [open, setOpen] = useState(false);
 
     return (
-        <Container fixed maxWidth="lg">
-            <Header setOpen={setOpen} />
-            <Menu open={open} setOpen={setOpen} />
-            <section role="main">{children}</section>
-            <Footer />
-        </Container>
+        <Box>
+            <Container fixed maxWidth="lg">
+                <Header setOpen={setOpen} />
+                <Menu open={open} setOpen={setOpen} />
+                <section role="main">{children}</section>
+                <Footer />
+            </Container>
+        </Box>
     );
 };
 

@@ -31,10 +31,13 @@ const CustomAccordions = ({
 
     const Description = () => (
         <Box>
-            <Typography variant="h5" sx={{ mt: 4, fontWeight: 700, color: '#00ff4a' }}>
+            <Typography
+                variant={matches ? 'h4' : 'h5'}
+                sx={{ mt: 4, fontWeight: 500, color: '#26FF14', fontFamily: 'Unbounded' }}
+            >
                 Описание проекта
             </Typography>
-            <Typography variant="h6" sx={{ mt: 2, fontWeight: 300 }}>
+            <Typography variant="h5" sx={{ mt: 2, fontWeight: 300, fontFamily: 'Ubuntu' }}>
                 {description}
             </Typography>
         </Box>
@@ -42,7 +45,10 @@ const CustomAccordions = ({
 
     const Stack = () => (
         <Box>
-            <Typography variant="h5" sx={{ mt: 4, fontWeight: 700, color: '#00ff4a' }}>
+            <Typography
+                variant={matches ? 'h4' : 'h5'}
+                sx={{ mt: 4, fontWeight: 500, color: '#26FF14', fontFamily: 'Unbounded' }}
+            >
                 Stack
             </Typography>
             <GridContainer>
@@ -58,7 +64,10 @@ const CustomAccordions = ({
                             width: '100%',
                         }}
                     >
-                        <Typography variant="h5" sx={{ mt: 4, fontWeight: 700 }}>
+                        <Typography
+                            variant="h5"
+                            sx={{ mt: 4, fontWeight: 500, fontFamily: 'Ubuntu' }}
+                        >
                             {title}
                         </Typography>
                     </Grid>
@@ -81,7 +90,7 @@ const CustomAccordions = ({
                     mr: 2,
                 }}
             >
-                <Typography variant="h5" sx={{ fontWeight: 700 }}>
+                <Typography variant="h5" sx={{ fontWeight: 700, fontFamily: 'Unbounded' }}>
                     {titleCode}
                 </Typography>
             </Button>
@@ -96,7 +105,7 @@ const CustomAccordions = ({
                     p: 2,
                 }}
             >
-                <Typography variant="h5" sx={{ fontWeight: 700 }}>
+                <Typography variant="h5" sx={{ fontWeight: 700, fontFamily: 'Unbounded' }}>
                     {titleProject}
                 </Typography>
             </Button>
@@ -126,7 +135,7 @@ const CustomAccordions = ({
                         p: 2,
                     }}
                 >
-                    <Typography variant="h5" sx={{ fontWeight: 700 }}>
+                    <Typography variant="h5" sx={{ fontWeight: 700, fontFamily: 'Unbounded' }}>
                         {titleCode}
                     </Typography>
                 </Button>
@@ -141,7 +150,7 @@ const CustomAccordions = ({
                         p: 2,
                     }}
                 >
-                    <Typography variant="h5" sx={{ fontWeight: 700 }}>
+                    <Typography variant="h5" sx={{ fontWeight: 700, fontFamily: 'Unbounded' }}>
                         {titleProject}
                     </Typography>
                 </Button>
@@ -152,11 +161,14 @@ const CustomAccordions = ({
     return (
         <Accordion sx={{ background: '#303030', color: '#FFFFFF' }}>
             <AccordionSummary
-                expandIcon={<ExpandMoreIcon sx={{ color: '#00ff4a' }} />}
+                expandIcon={<ExpandMoreIcon sx={{ color: '#26FF14' }} />}
                 id={id}
                 aria-controls={ariaControls}
             >
-                <Typography variant="h4" sx={{ fontWeight: 900, flexShrink: 0 }}>
+                <Typography
+                    variant="h4"
+                    sx={{ fontWeight: 500, flexShrink: 0, fontFamily: 'Ubuntu' }}
+                >
                     {name}
                 </Typography>
             </AccordionSummary>

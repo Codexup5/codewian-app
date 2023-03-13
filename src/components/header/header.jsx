@@ -10,13 +10,13 @@ const Header = ({ open, setOpen }) => {
         <Tooltip title="Открыть меню">
             <Button
                 size="large"
-                sx={{ color: '#00ff4a' }}
+                sx={{ color: '#26FF14' }}
                 aria-label="menu"
                 LinkComponent="a"
                 onClick={() => setOpen(true)}
             >
                 {matches ? (
-                    <Typography variant="h5" sx={{ fontWeight: 700 }}>
+                    <Typography variant="h5" sx={{ fontWeight: 700, fontFamily: 'Ubuntu' }}>
                         Меню
                     </Typography>
                 ) : (
