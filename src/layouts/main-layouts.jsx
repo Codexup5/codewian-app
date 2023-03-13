@@ -1,4 +1,4 @@
-import { Container, CssBaseline } from '@mui/material';
+import { Container, ThemeProvider } from '@mui/material';
 import { useState } from 'react';
 
 import Footer from '@components/footer/footer';
@@ -10,7 +10,6 @@ const MainLayouts = ({ children }) => {
 
     return (
         <Container fixed maxWidth="lg">
-            <CssBaseline />
             <Header setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />
             <section role="main">{children}</section>

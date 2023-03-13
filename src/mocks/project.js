@@ -38,8 +38,8 @@ export const PROJECT_LIST = [
             'Портфолио написанное на NEXT.JS c использование MUI. Есть небольшая информация обо мне,ссылки на социальные сети и проекты!',
         title: ['Next.JS', 'SASS', 'MUI'],
         titleCode: 'Код',
-        linkCode: '',
+        linkCode: 'https://github.com/Codexup5/codewian-app',
         titleProject: 'Проект',
-        linkProject: '',
+        linkProject: 'https://codewian-app.vercel.app/',
     },
 ];
