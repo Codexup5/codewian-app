@@ -9,14 +9,14 @@ import { SOCIAL } from 'src/mocks/social';
 const Menu = ({ open, setOpen }) => {
     const renderMenuItem = () => {
         return MENU_ITEM.map((item, index) => (
-            <Link key={index} href={item.link}>
+            <Link key={index} href={item.link} underline="none">
                 <Button
                     fullWidth
                     variant="text"
-                    sx={{ p: 4, color: '#00ff4a' }}
+                    sx={{ p: 4, color: '#26FF14' }}
                     onClick={handleToggleDrawer(false, setOpen)}
                 >
-                    <Typography variant="h5" sx={{ fontWeight: 700 }}>
+                    <Typography variant="h5" sx={{ fontWeight: 700, fontFamily: 'Ubuntu' }}>
                         {item.title}
                     </Typography>
                 </Button>
@@ -39,7 +39,7 @@ const Menu = ({ open, setOpen }) => {
                 target="_blank"
                 rel="noreferrer"
             >
-                <Typography variant="h5" sx={{ mr: 2, fontWeight: 700 }}>
+                <Typography variant="h5" sx={{ mr: 2, fontWeight: 700, fontFamily: 'Ubuntu' }}>
                     {item.title}
                 </Typography>
                 <Image src={item.icons} alt={item.title} width={item.width} height={item.height} />
@@ -57,7 +57,7 @@ const Menu = ({ open, setOpen }) => {
             >
                 <Box sx={{ width: 250, background: '#303030', height: '100%' }}>
                     {renderMenuItem(MENU_ITEM)}
-                    <Divider variant="middle" sx={{ borderColor: '#00ff4a' }} />
+                    <Divider variant="middle" sx={{ borderColor: '#26FF14' }} />
                     {renderSocialItem(SOCIAL)}
                 </Box>
             </SwipeableDrawer>

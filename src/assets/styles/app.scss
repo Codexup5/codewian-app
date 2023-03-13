@@ -1,10 +1,12 @@
 @import 'settings/colors';
-@import 'settings/fonts';
+// @import 'settings/fonts';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;800;900&display=swap');
 
 html,
 body {
-    color: #fff;
-    background-color: #131313;
+    color: $whithe-main-color;
+    background-color: $dark-main-color;
     background-image: url('../../assets/images/moon.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +18,7 @@ body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu';
 }
 
 * {
@@ -39,6 +41,7 @@ h4,
 h5,
 h6,
 p {
+    font-family: 'Ubuntu-Light', 'Ubuntu-Regular', 'Ubuntu-Medium', 'Ubuntu-Bold';
     margin: 0;
     padding: 0;
 }

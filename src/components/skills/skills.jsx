@@ -5,7 +5,7 @@ import Image from 'next/image';
 import ContainerBox from '@common/container-box/container-box';
 import ContainerCard from '@common/container-card/container-card';
 import GridContainer from '@common/grid/grid-container';
-import { SKILLS_ITEM } from 'src/mocks/skills';
+import { SKILLS_ITEM } from '@mocks/skills';
 
 const Skills = () => {
     const matches = useMediaQuery('(min-width:992px)');
@@ -26,7 +26,7 @@ const Skills = () => {
                     }}
                 >
                     <ContainerCard>
-                        <Typography variant="h4" sx={{ fontWeight: 600 }}>
+                        <Typography variant="h5" sx={{ fontWeight: 600, fontFamily: 'Unbounded' }}>
                             {item.title}
                         </Typography>
                         <motion.div
@@ -34,7 +34,7 @@ const Skills = () => {
                             whileTap={{ scale: 2, rotate: 90 }}
                             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
                         >
-                            <Button sx={{ color: '#00ff4a' }} variant="text">
+                            <Button sx={{ color: '#26FF14' }} variant="text">
                                 <Image
                                     src={item.img}
                                     alt={item.title}
@@ -52,7 +52,7 @@ const Skills = () => {
         <section id="skills">
             <Box>
                 <ContainerBox title="Скиллы">
-                    <Typography variant="h6" sx={{ fontWeight: 600, mt: 4 }}>
+                    <Typography variant="h5" sx={{ fontWeight: 300, mt: 4, fontFamily: 'Ubuntu' }}>
                         Вы можете поиграть с иконками!
                     </Typography>
                     <Grid container>{renderSkillsItem(SKILLS_ITEM)}</Grid>

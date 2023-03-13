@@ -16,7 +16,7 @@ const Typewriter = () => {
     return (
         <Box sx={{ mt: 2 }}>
             {text}
-            <Cursor cursorColor="#00ff4a" />
+            <Cursor cursorColor="#26FF14" />
         </Box>
     );
 };

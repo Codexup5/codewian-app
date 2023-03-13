@@ -33,7 +33,10 @@ const Footer = () => {
                             rel="noreferrer"
                         >
                             {matches ? (
-                                <Typography variant="h5" sx={{ mr: 4 }}>
+                                <Typography
+                                    variant="h5"
+                                    sx={{ mr: 4, fontWeight: 700, fontFamily: 'Ubuntu' }}
+                                >
                                     {item.title.toUpperCase()}
                                 </Typography>
                             ) : null}

@@ -1,4 +1,4 @@
-import { Box, Typography, useMediaQuery } from '@mui/material';
+import { Box, Divider, Typography, useMediaQuery } from '@mui/material';
 import Image from 'next/image';
 
 import Oleg from '@assets/images/avatar.svg';
@@ -26,10 +26,14 @@ const About = () => {
     );
 
     const Bio = () => (
-        <Typography align={matches ? 'justify' : 'left'} variant="h5" sx={{ mt: matches ? 4 : 0 }}>
+        <Typography
+            align={matches ? 'initial' : 'left'}
+            variant="h5"
+            sx={{ mt: matches ? 4 : 0, fontFamily: 'Ubuntu', fontWeight: 300 }}
+        >
             Позитивный, дружелюбный молодой человек. <br />
-            Командный игрок,хорошо работаю в команде. С творечским складом ума и большими амбициями.
-            Хочу развиваться и стать опытным разработчиком!
+            Командный игрок, хорошо работаю в команде. С творческим складом ума и большими
+            амбициями. Хочу развиваться и стать опытным разработчиком!
         </Typography>
     );
 
@@ -43,8 +47,24 @@ const About = () => {
                     }}
                 >
                     <GridChild md={8}>
-                        <Typography variant="h5" sx={{ fontWeight: 900, mt: matches ? 0 : 2 }}>
+                        <Typography
+                            variant="h4"
+                            sx={{
+                                fontWeight: 400,
+                                mt: matches ? 0 : 2,
+                                fontFamily: 'Ubuntu',
+                            }}
+                        >
                             Приветствую! <br />
+                        </Typography>
+
+                        <Typography
+                            variant="h4"
+                            sx={{
+                                fontWeight: 600,
+                                fontFamily: 'Unbounded',
+                            }}
+                        >
                             <Typewriter />
                         </Typography>
 
