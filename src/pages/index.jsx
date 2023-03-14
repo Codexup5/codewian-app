@@ -5,6 +5,7 @@ import About from '@components/about/about';
 import Projects from '@components/projects/projects';
 import Skills from '@components/skills/skills';
 import MainLayouts from '@layouts/main-layouts';
+import Hobby from '@components/hobby/hobby';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
                 <About />
                 <Skills />
                 <Projects />
+                <Hobby />
             </MainLayouts>
         </Box>
     );

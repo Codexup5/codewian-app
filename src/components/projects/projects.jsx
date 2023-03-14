@@ -3,14 +3,14 @@ import { Box } from '@mui/material';
 import { PROJECT_LIST } from '@mocks/project';
 
 import ContainerBox from '@common/container-box/container-box';
-import CustomAccordions from '@common/custom-accordion/custom-accordion';
+import CustomAccordionsProject from '@common/custom-accordion/custom-accordion-project';
 
 const Projects = () => {
     const renderProjects = () => (
         <Box>
             {PROJECT_LIST.map((item, index) => (
                 <Box key={index} sx={{ mb: 2 }}>
-                    <CustomAccordions
+                    <CustomAccordionsProject
                         id={item.id}
                         name={item.name}
                         src={item.image}

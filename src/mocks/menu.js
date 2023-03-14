@@ -11,4 +11,8 @@ export const MENU_ITEM = [
         title: 'Проекты',
         link: '/#project',
     },
+    {
+        title: 'Хобби',
+        link: '/#hobby',
+    },
 ];
