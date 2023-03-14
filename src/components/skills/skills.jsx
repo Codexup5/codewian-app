@@ -1,13 +1,10 @@
-import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material';
+import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 import ContainerBox from '@common/container-box/container-box';
-import ContainerCard from '@common/container-card/container-card';
+import CustomAccordionSkills from '@common/custom-accordion/custom-accordion-skills';
 import GridContainer from '@common/grid/grid-container';
 import { SKILLS_ITEM } from '@mocks/skills';
-import CustomAccordions from '@common/custom-accordion/custom-accordion-project';
-import CustomAccordionSkills from '@common/custom-accordion/custom-accordion-skills';
 
 const Skills = () => {
     const matches = useMediaQuery('(min-width:992px)');
@@ -39,9 +36,7 @@ const Skills = () => {
                     <Typography variant="h5" sx={{ fontWeight: 400, mt: 4, fontFamily: 'Ubuntu' }}>
                         Вы можете поиграть с иконками!
                     </Typography>
-                    <Grid container sx={{ mt: 2 }}>
-                        {renderSkillsItem(SKILLS_ITEM)}
-                    </Grid>
+                    <Grid sx={{ mt: 2 }}>{renderSkillsItem(SKILLS_ITEM)}</Grid>
                 </ContainerBox>
             </Box>
         </section>
