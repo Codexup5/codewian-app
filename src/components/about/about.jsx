@@ -27,9 +27,9 @@ const About = () => {
 
     const Bio = () => (
         <Typography
-            align={matches ? 'initial' : 'left'}
+            align="left"
             variant="h5"
-            sx={{ mt: matches ? 4 : 0, fontFamily: 'Ubuntu', fontWeight: 300 }}
+            sx={{ mt: matches ? 4 : 0, fontFamily: 'Ubuntu', fontWeight: 400 }}
         >
             Позитивный, дружелюбный молодой человек. <br />
             Командный игрок, хорошо работаю в команде. С творческим складом ума и большими

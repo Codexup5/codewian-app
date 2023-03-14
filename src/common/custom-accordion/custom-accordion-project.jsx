@@ -8,13 +8,12 @@ import {
     Typography,
     useMediaQuery,
 } from '@mui/material';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 import GridContainer from '@common/grid/grid-container';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const CustomAccordions = ({
+const CustomAccordionsProject = ({
     id,
     name,
     src,
@@ -37,7 +36,7 @@ const CustomAccordions = ({
             >
                 Описание проекта
             </Typography>
-            <Typography variant="h5" sx={{ mt: 2, fontWeight: 300, fontFamily: 'Ubuntu' }}>
+            <Typography variant="h5" sx={{ mt: 2, fontWeight: 400, fontFamily: 'Ubuntu' }}>
                 {description}
             </Typography>
         </Box>
@@ -189,4 +188,4 @@ const CustomAccordions = ({
     );
 };
 
-export default CustomAccordions;
+export default CustomAccordionsProject;

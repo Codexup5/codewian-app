@@ -1,7 +1,7 @@
 import LIKENDIN from '@assets/icons/social/linkedIN.svg';
 import TELEGRAM from '@assets/icons/social/telegram.svg';
 import GITHUB from '@assets/icons/social/GitHub.svg';
-import INSTA from '@assets/icons/social/insta.svg';
+import INSTA from '@assets/icons/social/instagram.svg';
 
 export const SOCIAL = [
     {

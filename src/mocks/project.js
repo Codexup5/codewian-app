@@ -22,7 +22,7 @@ export const PROJECT_LIST = [
         panelContent: 2,
         name: 'Sound Wave',
         image: NOT_FOUND,
-        description: 'Проект не найден',
+        description: 'Проект не загружен',
         title: ['React.JS', 'HTML', 'SASS'],
         titleCode: 'Код',
         linkCode: '',

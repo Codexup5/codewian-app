@@ -5,48 +5,59 @@ import React from '@assets/icons/skills/icons-react.svg';
 import MUI from '@assets/icons/skills/icons-material-ui.svg';
 import NEXT from '@assets/icons/skills/icons-next.svg';
 import TypeScript from '@assets/icons/skills/icons-typescript.svg';
+import FL from '../assets/icons/skills/fl-header-logo.png';
+
+const Base = 'Базовый';
+const Advanced = 'Продвинутый';
+const Pro = 'Профи';
 
 export const SKILLS_ITEM = [
     {
-        title: 'HTML',
-        img: HTML,
-        width: 40,
-        height: 40,
+        id: 1,
+        name: 'HTML',
+        icon: HTML,
+        level: Advanced,
     },
     {
-        title: 'CSS',
-        img: CSS3,
-        width: 40,
-        height: 40,
+        id: 2,
+        name: 'CSS',
+        icon: CSS3,
+        level: Advanced,
     },
     {
-        title: 'JS',
-        img: JavaScript,
-        width: 40,
-        height: 40,
+        id: 3,
+        name: 'JS',
+        icon: JavaScript,
+        level: Advanced,
     },
     {
-        title: 'React',
-        img: React,
-        width: 40,
-        height: 40,
+        id: 4,
+        name: 'React',
+        icon: React,
+        level: Advanced,
     },
     {
-        title: 'MUI',
-        img: MUI,
-        width: 40,
-        height: 40,
+        id: 5,
+        name: 'MUI',
+        icon: MUI,
+        level: Advanced,
     },
     {
-        title: 'NEXT',
-        img: NEXT,
-        width: 40,
-        height: 40,
+        id: 6,
+        name: 'NEXT',
+        icon: NEXT,
+        level: Base,
     },
     {
-        title: 'TS',
-        img: TypeScript,
-        width: 40,
-        height: 40,
+        id: 7,
+        name: 'TS',
+        icon: TypeScript,
+        level: Base,
+    },
+    {
+        id: 8,
+        name: 'FL',
+        icon: FL,
+        level: Pro,
     },
 ];
