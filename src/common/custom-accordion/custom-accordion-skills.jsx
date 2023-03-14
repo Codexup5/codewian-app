@@ -12,19 +12,16 @@ const CustomAccordionSkills = ({ id, name, icon, level }) => {
     const matches = useMediaQuery('(min-width:992px)');
 
     const Level = () => (
-        <Box sx={{ width: '100%' }}>
-            <Typography
-                variant={matches ? 'h5' : 'h6'}
-                sx={{
-                    fontWeight: 500,
-                    color: '#26FF14',
-                    fontFamily: 'Unbounded',
-                    display: 'flex',
-                }}
-            >
-                {level}
-            </Typography>
-        </Box>
+        <Typography
+            variant={matches ? 'h5' : 'h6'}
+            sx={{
+                fontWeight: 500,
+                color: '#26FF14',
+                fontFamily: 'Unbounded',
+            }}
+        >
+            {level}
+        </Typography>
     );
 
     return (
@@ -33,8 +30,6 @@ const CustomAccordionSkills = ({ id, name, icon, level }) => {
                 background: '#303030',
                 color: '#FFFFFF',
                 p: 2,
-
-                width: '100%',
             }}
         >
             <AccordionSummary
@@ -47,7 +42,9 @@ const CustomAccordionSkills = ({ id, name, icon, level }) => {
                 </Typography>
             </AccordionSummary>
 
-            <AccordionDetails sx={{ display: 'flex' }}>{Level()}</AccordionDetails>
+            <AccordionDetails sx={{ display: 'flex', justifyContent: 'center' }}>
+                {Level()}
+            </AccordionDetails>
         </Accordion>
     );
 };

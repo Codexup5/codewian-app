@@ -8,7 +8,7 @@ import TypeScript from '@assets/icons/skills/icons-typescript.svg';
 import FL from '../assets/icons/skills/fl-header-logo.png';
 
 const Base = 'Базовый';
-const Advanced = 'Продвинутый';
+const Advanced = 'Продвин.';
 const Pro = 'Профи';
 
 export const SKILLS_ITEM = [
